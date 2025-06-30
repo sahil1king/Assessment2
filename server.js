@@ -17,7 +17,7 @@ app.post('/chat', async (req, res) => {
     const mode = req.body.mode; 
 
     try {
-        let prompt = `User is asking for a food recipe with and servings. Dish: "${userMessage}". Provide the recipe.`;
+        let prompt = `User is asking for a food recipe without * and servings. Dish: "${userMessage}". Provide the recipe.`;
 
         const result = await model.generateContent(prompt);
         const reply = result.response.text().trim();
