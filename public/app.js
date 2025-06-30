@@ -41,5 +41,5 @@ function displayMessage(text, className) {
 let div = document.createElement('div');
 div.innerHTML = `<img style="border-radius: 50%;" height="40px" src="./audio-beat.gif" alt="">`
 chatBox.appendChild(div);
-    chatBox.scrollTop = chatBox.scrollHeight;
+    chatBox.scrollbottom = chatBox.scrollHeight;
 }
